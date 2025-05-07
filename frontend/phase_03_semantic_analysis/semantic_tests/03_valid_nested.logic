@@ -1,0 +1,2 @@
+// Nested quantifiers
+forall x [Domain] exists y [Range] R(x, y)

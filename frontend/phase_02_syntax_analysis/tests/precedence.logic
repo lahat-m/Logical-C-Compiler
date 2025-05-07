@@ -1,0 +1,2 @@
+// Test operator precedence
+p /\ q \/ r

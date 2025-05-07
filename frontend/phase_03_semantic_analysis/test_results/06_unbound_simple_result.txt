@@ -1,0 +1,10 @@
+Abstract Syntax Tree:
+Predicate: P
+Arguments: [z]
+
+Performing semantic analysis...
+
+Semantic Errors (1):
+  Error: Unbound variable 'z' used as argument 1 in predicate 'P' at line 2, column 5
+
+Semantic analysis failed. See errors above.

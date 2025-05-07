@@ -1,0 +1,2 @@
+// Arity error in complex expression
+forall x [Domain] forall y [Range] (P(x) /\ Q(x, y, z))

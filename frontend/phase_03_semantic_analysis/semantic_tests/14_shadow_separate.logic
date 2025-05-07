@@ -1,0 +1,3 @@
+// Shadowing in separate expressions
+forall x [Domain] P(x)
+forall x [Range] Q(x)

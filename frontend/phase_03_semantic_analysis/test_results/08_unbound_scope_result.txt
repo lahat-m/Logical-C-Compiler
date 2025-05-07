@@ -1,0 +1,19 @@
+Abstract Syntax Tree:
+BinaryOp: AND
+Left:
+  Quantifier: FORALL
+  Variable: x
+  Domain: [Domain]
+  Expression:
+    Predicate: P
+    Arguments: [x]
+Right:
+  Predicate: Q
+  Arguments: [x]
+
+Performing semantic analysis...
+
+Semantic Errors (1):
+  Error: Unbound variable 'x' used as argument 1 in predicate 'Q' at line 3, column 5
+
+Semantic analysis failed. See errors above.

@@ -1,0 +1,3 @@
+// Variable used outside its scope
+forall x [Domain] P(x)
+Q(x)

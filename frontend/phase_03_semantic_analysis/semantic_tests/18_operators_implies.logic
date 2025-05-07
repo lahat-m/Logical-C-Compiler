@@ -1,0 +1,2 @@
+// IMPLIES operator
+forall x [Domain] (P(x) -> Q(x))

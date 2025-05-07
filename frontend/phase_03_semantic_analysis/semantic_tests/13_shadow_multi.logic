@@ -1,0 +1,6 @@
+// Multiple variable shadowing
+forall x [D1] (
+  forall y [D2] (
+    forall x [D3] P(x, y)
+  )
+)

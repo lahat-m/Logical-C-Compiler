@@ -1,0 +1,14 @@
+Abstract Syntax Tree:
+Quantifier: FORALL
+Variable: x
+Domain: [Domain]
+Expression:
+  Predicate: P
+  Arguments: [y, x]
+
+Performing semantic analysis...
+
+Semantic Errors (1):
+  Error: Unbound variable 'y' used as argument 1 in predicate 'P' at line 2, column 26
+
+Semantic analysis failed. See errors above.

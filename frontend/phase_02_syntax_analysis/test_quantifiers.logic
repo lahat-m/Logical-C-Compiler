@@ -1,0 +1,2 @@
+// Test quantifiers and domains
+forall x [Domain] P(x)

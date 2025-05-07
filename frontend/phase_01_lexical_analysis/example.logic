@@ -1,0 +1,24 @@
+// Simple example of a logic program
+
+/* 
+   This demonstrates various features of our logic language
+   including operators, quantifiers, and predicates
+*/
+
+// Define a simple logical expression
+p /\ q -> r
+
+// Use quantifiers
+forall x [Domain] (
+    P(x) -> 
+    exists y [Range] (
+        R(x, y) \/ ~S(y)
+    )
+)
+
+// TRUE and FALSE literals
+P(a) <-> TRUE
+Q(b) <-> FALSE
+
+// XOR operation
+p ^ q

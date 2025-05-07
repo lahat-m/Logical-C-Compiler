@@ -1,0 +1,23 @@
+// Missing closing parenthesis
+(p /\ q -> r
+
+// Invalid quantifier domain - missing bracket
+forall x a, b, c] (P(x) -> Q(x))
+
+// Unbalanced operators
+p /\ /\ q
+
+// Invalid predicate arguments
+P(x,) /\ Q(,y)
+
+// Invalid variable names starting with uppercase
+p /\ Q /\ r
+
+// Missing operand
+p /\ 
+
+// Unclosed comment
+/* This comment is not closed
+
+// Valid expression for recovery testing
+TRUE /\ FALSE

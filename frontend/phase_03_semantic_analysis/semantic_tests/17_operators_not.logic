@@ -1,0 +1,2 @@
+// NOT operator
+forall x [Domain] ~P(x)

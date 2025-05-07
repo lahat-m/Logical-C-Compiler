@@ -1,0 +1,4 @@
+// Multiple valid expressions
+forall x [Domain] P(x)
+exists y [Range] Q(y)
+forall z [Set] (R(z) -> S(z))

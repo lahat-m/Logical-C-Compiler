@@ -1,0 +1,2 @@
+// Complex valid expression
+forall x [Domain] (P(x) /\ Q(x) -> R(x))

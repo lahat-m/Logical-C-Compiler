@@ -1,0 +1,18 @@
+Abstract Syntax Tree:
+Quantifier: FORALL
+Variable: x
+Domain: [Domain]
+Expression:
+  Quantifier: FORALL
+  Variable: x
+  Domain: [Range]
+  Expression:
+    Predicate: P
+    Arguments: [x]
+
+Performing semantic analysis...
+
+Semantic Warnings (1):
+  Warning: Variable 'x' at line 2, column 42 shadows another variable defined at line 2, column 42
+
+Semantic analysis completed successfully!

@@ -1,0 +1,3 @@
+// Test unary operators
+~p
+~(p /\ q)

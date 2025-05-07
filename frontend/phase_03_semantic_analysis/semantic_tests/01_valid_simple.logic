@@ -1,0 +1,2 @@
+// Simple valid expression
+forall x [Domain] P(x)

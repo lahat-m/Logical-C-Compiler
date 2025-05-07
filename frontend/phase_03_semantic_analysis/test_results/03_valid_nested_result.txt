@@ -1,0 +1,15 @@
+Abstract Syntax Tree:
+Quantifier: FORALL
+Variable: x
+Domain: [Domain]
+Expression:
+  Quantifier: EXISTS
+  Variable: y
+  Domain: [Range]
+  Expression:
+    Predicate: R
+    Arguments: [y, x]
+
+Performing semantic analysis...
+
+Semantic analysis completed successfully!

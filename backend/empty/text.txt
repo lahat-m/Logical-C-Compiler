@@ -1,0 +1,6 @@
+chmod +x run_semantic_tests.sh
+./run_semantic_tests.sh
+
+
+bash test_codegen.sh
+./code_generator codegen_tests/01_literal.logic

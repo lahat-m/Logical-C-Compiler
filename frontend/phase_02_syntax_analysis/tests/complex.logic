@@ -1,0 +1,7 @@
+// Complex expression with quantifiers, predicates, and operators
+forall x [Universe] (
+    P(x) /\ Q(x) -> 
+    exists y [Range] (
+        R(x, y) \/ ~S(y)
+    )
+)

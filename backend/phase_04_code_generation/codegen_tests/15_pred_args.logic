@@ -1,0 +1,2 @@
+// Predicate with multiple args
+P(x, y, z)

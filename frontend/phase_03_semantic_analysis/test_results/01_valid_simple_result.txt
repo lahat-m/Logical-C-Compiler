@@ -1,0 +1,11 @@
+Abstract Syntax Tree:
+Quantifier: FORALL
+Variable: x
+Domain: [Domain]
+Expression:
+  Predicate: P
+  Arguments: [x]
+
+Performing semantic analysis...
+
+Semantic analysis completed successfully!

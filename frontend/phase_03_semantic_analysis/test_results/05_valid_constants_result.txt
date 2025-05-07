@@ -1,0 +1,28 @@
+Abstract Syntax Tree:
+BinaryOp: AND
+Left:
+  Quantifier: FORALL
+  Variable: x
+  Domain: [Domain]
+  Expression:
+    BinaryOp: IMPLIES
+    Left:
+      Predicate: P
+      Arguments: [x]
+    Right:
+      Literal: TRUE
+Right:
+  Quantifier: FORALL
+  Variable: y
+  Domain: [Range]
+  Expression:
+    BinaryOp: IMPLIES
+    Left:
+      Literal: FALSE
+    Right:
+      Predicate: Q
+      Arguments: [y]
+
+Performing semantic analysis...
+
+Semantic analysis completed successfully!

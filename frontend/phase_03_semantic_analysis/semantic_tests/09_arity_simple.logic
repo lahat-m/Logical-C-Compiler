@@ -1,0 +1,2 @@
+// Simple predicate arity error
+forall x [Domain] P(x, y)

@@ -1,0 +1,5 @@
+// Mixed errors in different expressions
+forall x [Domain] P(x)
+Q(z)
+forall y [Range] P(y, z)
+forall x [Set] (forall x [Subset] R(x))

@@ -1,0 +1,2 @@
+// Operator precedence
+TRUE /\ FALSE \/ TRUE -> FALSE <-> TRUE ^ FALSE

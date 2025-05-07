@@ -1,0 +1,2 @@
+// Simple variable shadowing
+forall x [Domain] (forall x [Range] P(x))

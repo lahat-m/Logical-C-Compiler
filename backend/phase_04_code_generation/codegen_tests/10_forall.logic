@@ -1,0 +1,2 @@
+// Universal quantifier
+forall x [Domain] P(x)

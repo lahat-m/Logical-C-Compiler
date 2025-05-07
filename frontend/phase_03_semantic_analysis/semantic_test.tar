@@ -1,0 +1,35 @@
+#!/bin/bash
+# This is a shell script to create a tar archive of all the test files
+
+# Create a directory for the tests if it doesn't exist
+mkdir -p semantic_tests
+
+# Copy all the test files to the directory
+cp 01_valid_simple.logic semantic_tests/
+cp 02_valid_complex.logic semantic_tests/
+cp 03_valid_nested.logic semantic_tests/
+cp 04_valid_multi.logic semantic_tests/
+cp 05_valid_constants.logic semantic_tests/
+cp 06_unbound_simple.logic semantic_tests/
+cp 07_unbound_complex.logic semantic_tests/
+cp 08_unbound_scope.logic semantic_tests/
+cp 09_arity_simple.logic semantic_tests/
+cp 10_arity_mixed.logic semantic_tests/
+cp 11_arity_complex.logic semantic_tests/
+cp 12_shadow_simple.logic semantic_tests/
+cp 13_shadow_multi.logic semantic_tests/
+cp 14_shadow_separate.logic semantic_tests/
+cp 15_operators_and.logic semantic_tests/
+cp 16_operators_or.logic semantic_tests/
+cp 17_operators_not.logic semantic_tests/
+cp 18_operators_implies.logic semantic_tests/
+cp 19_operators_iff.logic semantic_tests/
+cp 20_operators_xor.logic semantic_tests/
+cp 21_operators_precedence.logic semantic_tests/
+cp 22_mixed_errors.logic semantic_tests/
+cp run_semantic_tests.sh semantic_tests/
+
+# Create a tar archive
+tar -cf semantic_tests.tar semantic_tests/
+
+echo "Archive semantic_tests.tar created with all test files."

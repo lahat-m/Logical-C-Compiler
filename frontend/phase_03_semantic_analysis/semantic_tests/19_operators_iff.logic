@@ -1,0 +1,2 @@
+// IFF operator
+forall x [Domain] (P(x) <-> Q(x))
