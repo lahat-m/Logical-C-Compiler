@@ -241,8 +241,10 @@ Possible extensions:
 
 ## Acknowledgments
 
-This compiler was developed as a project for a compiler construction course.
+This compiler was developed as a project for a compiler construction course SCS3305, University of Nairobi.
 
-## License
+## Author
 
-This project is made available under the MIT License.
+```
+Lahat Mariel
+```
