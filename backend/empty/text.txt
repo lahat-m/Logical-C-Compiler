@@ -4,3 +4,7 @@ chmod +x run_semantic_tests.sh
 
 bash test_codegen.sh
 ./code_generator codegen_tests/01_literal.logic
+
+
+chmod +x phase4_setup.sh
+./phase4_setup.sh
