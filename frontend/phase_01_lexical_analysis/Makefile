@@ -3,7 +3,15 @@ CFLAGS = -Wall -g
 LEX = flex
 LEXFLAGS = -o lexer.c
 
+# Directory structure
+PHASE1_DIR = .
+BUILD_DIR = build
+
 all: lexer
+
+# Create build directory if it doesn't exist
+$(BUILD_DIR):
+	mkdir -p $(BUILD_DIR)
 
 lexer: lexer.c tokens.h
 	$(CC) $(CFLAGS) -o lexer lexer.c -DTEST_LEXER
@@ -22,4 +30,7 @@ clean:
 	rm -f lexer lexer.c *.o
 	rm -f test_results.txt
 
-.PHONY: all test clean test_files
+distclean: clean
+	rm -rf $(BUILD_DIR)
+
+.PHONY: all test clean test_files distclean

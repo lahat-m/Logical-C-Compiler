@@ -5,6 +5,13 @@ chmod +x "$0"
 # Directory for test files
 TEST_DIR="tests"
 RESULTS_FILE="test_results.txt"
+BUILD_DIR="build"  # Add build directory reference
+
+# Ensure the lexer is built
+if [ ! -f "lexer" ]; then
+    echo "Lexer not found. Building..."
+    make lexer
+fi
 
 # Clear results file
 > $RESULTS_FILE

@@ -2,18 +2,26 @@
 # Make this script executable
 chmod +x "$0"
 
-# Define the path to the test files
+# Define paths and directories
 TEST_PATH="semantic_tests"
+RESULTS_DIR="test_results"
+BUILD_DIR="build"
+
+# Ensure the semantic analyzer is built
+if [ ! -f "semantic_analyzer" ]; then
+    echo "Semantic analyzer not found. Building..."
+    make semantic_analyzer
+fi
 
 # Create directories if they don't exist
-mkdir -p test_results
+mkdir -p "$RESULTS_DIR"
 
 # Function to run a test
 run_test() {
     local test_file="${TEST_PATH}/$1"
     local test_name=$(basename "$1" .logic)
     local expected_result="$2"
-    local result_file="test_results/${test_name}_result.txt"
+    local result_file="$RESULTS_DIR/${test_name}_result.txt"
     
     echo -n "Running test: ${test_name}... "
     
@@ -43,6 +51,13 @@ run_test() {
         echo "PARSING ERROR"
     fi
 }
+
+# Check if test files exist, otherwise suggest running the setup script
+if [ ! -d "$TEST_PATH" ] || [ -z "$(ls -A "$TEST_PATH" 2>/dev/null)" ]; then
+    echo "ERROR: No test files found in $TEST_PATH directory."
+    echo "Please run the setup script first to create the test files."
+    exit 1
+fi
 
 # Run all the tests
 echo "===== GROUP 1: Valid Expressions (should all pass) ====="
@@ -79,5 +94,5 @@ run_test "21_operators_precedence.logic" "PASS"
 echo -e "\n===== GROUP 6: Mixed Errors (should fail) ====="
 run_test "22_mixed_errors.logic" "FAIL"
 
-echo -e "\nAll tests completed. Detailed results are in the test_results directory."
-echo "To view a specific test result: cat test_results/[test_name]_result.txt"
+echo -e "\nAll tests completed. Detailed results are in the $RESULTS_DIR directory."
+echo "To view a specific test result: cat $RESULTS_DIR/[test_name]_result.txt"

@@ -1,0 +1,6 @@
+/* Test file for 
+   quantifiers and literals */
+forall x [Domain] P(x)
+exists y [Domain] Q(y)
+TRUE
+FALSE

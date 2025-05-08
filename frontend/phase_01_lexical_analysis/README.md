@@ -1,13 +1,20 @@
 # Logic Compiler - Phase 1: Lexical Analysis
 
-This is the implementation of Phase 1 (Lexical Analysis) for the Logic Compiler project. This phase handles tokenizing input source files containing logic expressions into meaningful tokens that will be used by subsequent phases of the compiler.
 
-## Components
+This directory contains the lexical analyzer for the logic language compiler. The lexical analyzer converts source code into tokens that are used by the parser in Phase 2.
 
-1. **lexer.l** - Flex specification file for the lexical analyzer
-2. **tokens.h** - Header file containing token definitions
-3. **Makefile** - Build system configuration
-4. **run_test.sh** - Script to run lexical analyzer tests
+## Directory Structure
+
+```
+frontend/
+└── phase_01_lexical_analysis/
+├── Makefile
+├── README.md
+├── lexer.l          # Flex specification file
+├── tokens.h         # Token definitions
+├── run_test.sh      # Test script
+└── tests/           # Test files directory
+```
 
 ## Supported Tokens
 
@@ -49,22 +56,53 @@ The lexer provides error detection and reporting for:
 - Unterminated comments
 - Identifiers exceeding maximum length
 
-## Building and Testing
+## Building the Lexical Analyzer
 
-### To build the lexer:
-```
+You can build the lexical analyzer using one of the following methods:
+
+### Method 1: Local Build (Traditional)
+
+This builds using files in the current directory:
+
+```bash
 make
 ```
+### Method 2: Build with the Build Directory
+This creates a build directory for intermediate files:
+```
+make lexer
+```
 
-### To run tests:
+
+### Running Tests
+To run tests for the lexical analyzer
+
 ```
 make test
 ```
 
-### To clean build artifacts:
+This will:
+
+Create test files if they don't exist
+Run the lexical analyzer on each test file
+Save the results to test_results.txt
+
+
+## Cleaning Up
+To remove generated files:
 ```
 make clean
 ```
+```
+make distclean
+```
+
+## File Descriptions
+
+. lexer.l: Flex specification file that defines the lexical analyzer
+. tokens.h: Header file with token definitions
+. un_test.sh: Test script that runs the lexical analyzer on test files
+. tests/: Directory containing test input files
 
 ## Output Format
 

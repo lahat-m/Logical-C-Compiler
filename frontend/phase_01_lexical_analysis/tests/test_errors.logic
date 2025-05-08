@@ -1,0 +1,10 @@
+// Invalid characters
+
+@symbol
+
+// Unterminated comment
+/*
+  This comment doesn't end
+
+// Identifier too long (more than 64 characters)
+abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrst

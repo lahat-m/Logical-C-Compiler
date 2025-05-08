@@ -1,0 +1,7 @@
+// Test file for logical operators
+p /\ q  // AND
+p \/ q  // OR
+~p      // NOT
+p -> q  // IMPLIES
+p <-> q // IFF
+p ^ q   // XOR

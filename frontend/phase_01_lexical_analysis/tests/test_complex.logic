@@ -1,7 +1,7 @@
-// Complex nested expressions
+// Complex logical expression
 forall x [Domain] (
     (P(x) /\ Q(x)) -> 
     (exists y [Range] (
         R(x, y) \/ ~S(y)
     ))
-)
+) <-> TRUE
