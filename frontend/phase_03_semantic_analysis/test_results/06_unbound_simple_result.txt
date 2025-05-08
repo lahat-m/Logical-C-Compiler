@@ -1,10 +1,1 @@
-Abstract Syntax Tree:
-Predicate: P
-Arguments: [z]
-
-Performing semantic analysis...
-
-Semantic Errors (1):
-  Error: Unbound variable 'z' used as argument 1 in predicate 'P' at line 2, column 5
-
-Semantic analysis failed. See errors above.
+run_semantic_tests.sh: line 35: ./semantic_analyzer: Permission denied
