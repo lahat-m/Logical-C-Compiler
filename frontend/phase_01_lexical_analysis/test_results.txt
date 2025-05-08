@@ -1,0 +1,115 @@
+===== TEST: test_complex =====
+Error at line 5, column 12: Unrecognized character ','
+Token Stream:
+Line 2, Col 1: FORALL
+Line 2, Col 8: VARIABLE: x
+Line 2, Col 10: LBRACKET
+Line 2, Col 11: PREDICATE: Domain
+Line 2, Col 17: RBRACKET
+Line 2, Col 19: LPAREN
+Line 3, Col 5: LPAREN
+Line 3, Col 6: PREDICATE: P
+Line 3, Col 7: LPAREN
+Line 3, Col 8: VARIABLE: x
+Line 3, Col 9: RPAREN
+Line 3, Col 11: AND
+Line 3, Col 14: PREDICATE: Q
+Line 3, Col 15: LPAREN
+Line 3, Col 16: VARIABLE: x
+Line 3, Col 17: RPAREN
+Line 3, Col 18: RPAREN
+Line 3, Col 20: IMPLIES
+Line 4, Col 5: LPAREN
+Line 4, Col 6: EXISTS
+Line 4, Col 13: VARIABLE: y
+Line 4, Col 15: LBRACKET
+Line 4, Col 16: PREDICATE: Range
+Line 4, Col 21: RBRACKET
+Line 4, Col 23: LPAREN
+Line 5, Col 9: PREDICATE: R
+Line 5, Col 10: LPAREN
+Line 5, Col 11: VARIABLE: x
+Line 5, Col 14: VARIABLE: y
+Line 5, Col 15: RPAREN
+Line 5, Col 17: OR
+Line 5, Col 20: NOT
+Line 5, Col 21: PREDICATE: S
+Line 5, Col 22: LPAREN
+Line 5, Col 23: VARIABLE: y
+Line 5, Col 24: RPAREN
+Line 6, Col 5: RPAREN
+Line 6, Col 6: RPAREN
+Line 7, Col 1: RPAREN
+Line 7, Col 3: IFF
+Line 7, Col 7: TRUE
+
+
+
+===== TEST: test_errors =====
+Error at line 3, column 1: Unrecognized character '@'
+Error: Unterminated comment starting at line 6, column 1
+Token Stream:
+Line 3, Col 2: VARIABLE: symbol
+
+
+
+===== TEST: test_identifiers =====
+Token Stream:
+Line 2, Col 1: VARIABLE: x
+Line 3, Col 1: VARIABLE: variable_1
+Line 4, Col 1: VARIABLE: myVar
+Line 5, Col 1: VARIABLE: a123
+Line 8, Col 1: PREDICATE: Predicate
+Line 9, Col 1: PREDICATE: IsTrue
+Line 10, Col 1: PREDICATE: P
+Line 11, Col 1: PREDICATE: Test_Predicate
+
+
+
+===== TEST: test_operators =====
+Token Stream:
+Line 2, Col 1: VARIABLE: p
+Line 2, Col 3: AND
+Line 2, Col 6: VARIABLE: q
+Line 3, Col 1: VARIABLE: p
+Line 3, Col 3: OR
+Line 3, Col 6: VARIABLE: q
+Line 4, Col 1: NOT
+Line 4, Col 2: VARIABLE: p
+Line 5, Col 1: VARIABLE: p
+Line 5, Col 3: IMPLIES
+Line 5, Col 6: VARIABLE: q
+Line 6, Col 1: VARIABLE: p
+Line 6, Col 3: IFF
+Line 6, Col 7: VARIABLE: q
+Line 7, Col 1: VARIABLE: p
+Line 7, Col 3: XOR
+Line 7, Col 5: VARIABLE: q
+
+
+
+===== TEST: test_quantifiers =====
+Token Stream:
+Line 3, Col 1: FORALL
+Line 3, Col 8: VARIABLE: x
+Line 3, Col 10: LBRACKET
+Line 3, Col 11: PREDICATE: Domain
+Line 3, Col 17: RBRACKET
+Line 3, Col 19: PREDICATE: P
+Line 3, Col 20: LPAREN
+Line 3, Col 21: VARIABLE: x
+Line 3, Col 22: RPAREN
+Line 4, Col 1: EXISTS
+Line 4, Col 8: VARIABLE: y
+Line 4, Col 10: LBRACKET
+Line 4, Col 11: PREDICATE: Domain
+Line 4, Col 17: RBRACKET
+Line 4, Col 19: PREDICATE: Q
+Line 4, Col 20: LPAREN
+Line 4, Col 21: VARIABLE: y
+Line 4, Col 22: RPAREN
+Line 5, Col 1: TRUE
+Line 6, Col 1: FALSE
+
+
+

@@ -1,0 +1,14 @@
+# First, check the file type to confirm it has Windows line endings
+file run_test.sh
+
+# Remove the Windows line endings (CRLF -> LF)
+sed -i 's/\r$//' run_test.sh
+
+# Or use dos2unix if available
+# dos2unix run_test.sh
+
+# Make sure it's executable
+chmod +x run_test.sh
+
+# Try running the script again
+./run_test.sh
